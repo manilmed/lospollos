@@ -1,0 +1,150 @@
+/* Styles pour le corps du document */
+body {
+    font-family: 'Bungee Spice', cursive; /* Définir la famille de polices sur 'Bungee Spice' ou une police générique cursive */
+    margin: 0; /* Supprimer les marges par défaut */
+    padding: 0; /* Supprimer le padding par défaut */
+    
+}
+/* Styles pour la barre de navigation */
+nav {
+    background-color: #f0e10e;/* Définir la couleur de fond sur jaune */
+    padding: 10px 0;/* Ajouter un padding de 10px en haut et en bas, aucun padding sur les côtés gauche et droit */
+    text-align: center; /* Centrer le contenu */
+}
+/* Styles pour la liste non ordonnée à l'intérieur de la barre de navigation */
+nav ul {
+    list-style-type: none; /* Supprimer le type de liste par défaut (puces) */
+    margin: 0;/* Supprimer les marges par défaut */
+    padding: 0;/* Supprimer le padding par défaut */
+}
+
+nav ul li {
+    display: inline;/* Afficher les éléments de liste en ligne pour apparaître horizontalement */
+    margin-right: 20px; /* Ajouter une marge à droite pour séparer les éléments de liste */
+}
+
+nav ul li a {
+    color: rgb(252, 41, 4); /* Définir la couleur du texte sur une nuance de rouge */
+     text-decoration: none; /* Supprimer la décoration de texte par défaut (soulignement)  */
+}
+section {
+    font-family: 'Bungee Spice', cursive; /* apliquer la police choisi dans le googel font bungie spice */
+}
+
+.home-page {
+    background-color: #00a2ff; /* couleur de fond*/
+    background-image: url('background-image.jpg');/*image de fond */
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.logo img {
+    max-width: 400px; /*Ajustez la taille du logo */
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #f30909;
+}
+
+/* Styles de pied de page */
+footer {
+    background-color: #f0e10e;
+    color: rgb(245, 241, 2);
+    text-align: center;
+    padding: 20px 0;
+}
+/* Menu Section Styles */
+.menu {
+    text-align: center;
+    padding: 100px 0;
+    font-family: 'Bungee Spice', cursive;
+    background-image: url('background-image.jpg'); /*image de fond */
+    background-size: cover; /* pour que l'image de fond couvre toute la section */
+    background-position: center; /* Centrez l'image de fond */
+}
+
+.menu h1 {
+    color: #333; /*Couleur de l'en-tête*/
+    font-size: 36px; /*Taille de police*/
+}
+
+.menu p {
+    font-size: 18px; /*Taille de police*/
+    margin-bottom: 20px; /*Ajuster l'espacement */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    font-size: 16px; /* Taille de police*/
+    margin-bottom: 10px; /*Ajuster l'espacement*/
+}
+.menu-item {
+    display: inline-block; /*Transformer les éléments du menu en éléments de type inline-block */
+    margin: 0 10px; /* ajouter de le espace entre les element */
+}
+
+.menu-item img {
+    display: block; /* les images sont affichées comme des éléments bloc */
+    margin: 0 auto; /*  "Centrer les images */
+    max-width: 100%; /*Veillez à ce que les images ne dépassent pas la largeur de leur conteneur */
+}
+
+/*Disposer les éléments du menu horizontalement */
+.menu-item {
+    width: 30%; /* Définir la largeur de chaque élément de menu */
+    vertical-align: top; /* Aligner les éléments du menu en haut */
+    margin: 0 1.5%; /* "Ajuster l'espacement entre les éléments du menu */
+}
+/* Navigation links */
+nav ul li a {
+    font-family: 'Bungee Spice', cursive;
+    
+}
+ /* About Section Styles */
+.about {
+    text-align: center;
+    padding: 100px 0;
+    font-family: 'Bungee Spice', cursive;
+    background-image: url('background-image.jpg'); /*image de fond */
+    background-size: cover; /*pour que l'image de fond couvre toute la section */
+    background-position: center; /*Centrez l'image de fond */
+}
+ /* Contact Section Styles */
+.contact {
+    text-align: center;
+    padding: 100px 0;
+    font-family: 'Bungee Spice', cursive;
+    background-image: url('background-image.jpg'); /* image de fond */
+    background-size: cover; /* pour que l'image de fond couvre toute la section */
+    background-position: center; /* Centrez l'image de fond */
+}
+
+.contact h2 {
+    color: #333; /* Couleur de l'en-tête */
+    font-size: 36px; /*Taille de police */
+}
+
+.contact p {
+    font-size: 18px; /* Taille de police */
+    margin-bottom: 20px; /* Ajuster l'espacement */
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Appliquer l'animation au logo au survol de la souris */
+.logo:hover {
+    animation: spin 1s linear forwards;
+}
